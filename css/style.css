@@ -1,0 +1,18 @@
+.imagens-tecnologias {
+    display: flex;     
+    gap: 20px;         
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tech-container {
+    border: 2px solid #ccc;    /* Borda em volta da “caixa” */
+    padding: 10px;            /* Espaço interno */
+    margin: 10px;             /* Espaço entre caixas */
+    border-radius: 5px;       /* Cantos arredondados (opcional) */
+    display: inline-block;    /* Para que as caixas fiquem lado a lado */
+    vertical-align: top;      /* Alinha pelo topo se as alturas forem diferentes */
+    /* background-color: #f9f9f9;  <-- Se quiser cor de fundo */
+  }
+  
+  
