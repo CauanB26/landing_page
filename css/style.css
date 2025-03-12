@@ -1,18 +1,67 @@
-.imagens-tecnologias {
-    display: flex;     
-    gap: 20px;         
-    align-items: center;
-    justify-content: center;
-  }
+header {
+  position: relative;  /* Necessário para usar position: absolute nos filhos */
+  text-align: center;
+  background-color: #5d6568;
+  padding: 10px 0;
+}
 
-  .tech-container {
-    border: 2px solid #ccc;    /* Borda em volta da “caixa” */
-    padding: 10px;            /* Espaço interno */
-    margin: 10px;             /* Espaço entre caixas */
-    border-radius: 5px;       /* Cantos arredondados (opcional) */
-    display: inline-block;    /* Para que as caixas fiquem lado a lado */
-    vertical-align: top;      /* Alinha pelo topo se as alturas forem diferentes */
-    /* background-color: #f9f9f9;  <-- Se quiser cor de fundo */
-  }
-  
-  
+/* Seletor fica no canto superior direito */
+#select_buttom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* Você pode ajustar esses valores conforme quiser */
+}
+
+.header-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+header h1 {
+  font-weight: 300;
+  margin: 0;
+  color: #fff;
+}
+
+
+/* Contêiner que agrupa todos os cartões de tecnologia */
+.tech-cards-container {
+  display: flex;
+  flex-wrap: wrap;    /* Permite quebrar linha em telas menores */
+  gap: 20px;          /* Espaço horizontal/vertical entre os cartões */
+  justify-content: center; /* Centraliza se quiser */
+  margin-top: 20px;
+}
+
+/* Cada cartão individual */
+.tech-card {
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 300px;          /* Largura fixa ou ajuste conforme precisar */
+  padding: 20px;
+  box-sizing: border-box; /* Garante que padding conte dentro da largura */
+  text-align: center;     /* Centraliza conteúdo dentro do card */
+}
+
+/* Ícone da tecnologia */
+.tech-icon {
+  width: 80px;  /* Ajuste conforme o tamanho desejado */
+  height: auto; /* Mantém a proporção original da imagem */
+  margin-bottom: 10px;
+}
+
+/* Título do card (nome da tecnologia) */
+.tech-card h3 {
+  margin: 0 0 10px;   /* Espaço inferior antes do parágrafo */
+  color: #333;
+}
+
+/* Parágrafos dentro do card */
+.tech-card p {
+  color: #555;
+  line-height: 1.4;
+}

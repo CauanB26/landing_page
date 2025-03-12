@@ -1,102 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Cauan Baptista</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Cauan Baptista</title>
 </head>
-
 <body>
-    <!-- Cabeçalho: pode conter logo, navegação ou título principal -->
-    <header>
-        <h1> Cauan Magalhães Baptista</h1>
-    </header>
+  <header>
 
-    <!-- Seção principal de conteúdo -->
-    <main>
-        <h2>Sobre mim:</h2>
-        <p>Olá, sou Cauan Magalhães Baptista, apaixonado por tecnologia e desenvolvimento.
-            Atualmente, estou matriculado no Ibmec, onde curso Engenharia de Software.
-            Anteriormente, cursei 6 períodos de Ciência da Computação na PUC-Rio,
-            mas optei por trancar a matrícula para direcionar meu foco para novos desafios. </p>
+    <select name="PT-BR_ENG" id="select_buttom">
+        <option value="PT-BR">PT-BR</option>
+        <option value="ENG">ENG</option>
+    </select>
 
-        <p>Minha trajetória é movida pela curiosidade e pelo desejo constante de aprender,
-            seja explorando linguagens como C, Python e SQL ou me aventurando no universo web com HTML e CSS.
-            Convido você a conhecer meu trabalho e a acompanhar essa jornada repleta de inovação e crescimento.</p>
+    <img src="img/Fotinha_bone.png" alt="Minha foto" class="header-photo">
+   
+    <h1>Cauan Magalhães Baptista</h1>
+  </header>
 
-        <h2>Experiência Profissional:</h2>
-        <h3>Estagiário de TI na Dominos's Brasil (Agosto/24 - atual)</h3>
+  <main>
+    <h2>Sobre mim:</h2>
+    <p>Olá, sou Cauan Magalhães Baptista, apaixonado por tecnologia e desenvolvimento.
+      Atualmente, estou matriculado no Ibmec, onde curso Engenharia de Software.
+      Anteriormente, cursei 6 períodos de Ciência da Computação na PUC-Rio,
+      mas optei por trancar a matrícula para direcionar meu foco para novos desafios.</p>
 
-        <p>Atualmente, sou estagiário de TI na Domino's Pizza Brasil,
-            onde contribuo ativamente para a gestão e otimização dos sistemas
-            internos da empresa. Entre minhas principais responsabilidades, destaco o
-            suporte e manutenção do Pulse, um sistema desenvolvido exclusivamente para a
-            Domino's, fundamental para o gerenciamento dos processos internos. Além disso,
-            sou responsável pela criação e manutenção de dashboards interativos no Power BI e
-            utilizo o Excel diariamente para diversas tarefas de análise e controle, o que
-            auxilia na tomada de decisões estratégicas.
-        </p>
+    <p>Minha trajetória é movida pela curiosidade e pelo desejo constante de aprender,
+      seja explorando linguagens como C, Python e SQL ou me aventurando no universo web com HTML e CSS.
+      Convido você a conhecer meu trabalho e a acompanhar essa jornada repleta de inovação e crescimento.</p>
 
+    <h2>Experiência Profissional:</h2>
+    <h3>Estagiário de TI na Domino's Brasil (Agosto/24 - atual)</h3>
+
+    <p>Atualmente, sou estagiário de TI na Domino's Pizza Brasil,
+      onde contribuo ativamente para a gestão e otimização dos sistemas
+      internos da empresa. Entre minhas principais responsabilidades, destaco o
+      suporte e manutenção do Pulse, um sistema desenvolvido exclusivamente para a
+      Domino's, fundamental para o gerenciamento dos processos internos. Além disso,
+      sou responsável pela criação e manutenção de dashboards interativos no Power BI e
+      utilizo o Excel diariamente para diversas tarefas de análise e controle, o que
+      auxilia na tomada de decisões estratégicas.
+    </p>
+
+    <p>
+      Essa experiência tem aprimorado minhas habilidades de comunicação,
+      pesquisa e resolução de problemas, preparando-me para enfrentar desafios complexos e
+      impulsionar a eficiência operacional da organização.
+    </p>
+
+    <h2>Tecnologias:</h2>
+
+    <!-- Contêiner que agrupa todos os “cards” de tecnologia -->
+    <div class="tech-cards-container">
+
+      <!-- Card Python -->
+      <div class="tech-card">
+        <img src="img/icons8-python-144.png" alt="Logo Python" class="tech-icon" />
+        <h3>Python</h3>
         <p>
-            Essa experiência tem aprimorado minhas habilidades de comunicação,
-            pesquisa e resolução de problemas, preparando-me para enfrentar desafios complexos e
-            impulsionar a eficiência operacional da organização.
+          Minha experiência com Python começou na faculdade, em projetos mais simples. 
+          Entretanto, por ser uma linguagem extremamente versátil, 
+          já utilizei bibliotecas como o Pandas para integrar dados com o Excel, 
+          além de criar automações e preencher cadastros, tudo com integração direta ao Excel. 
+          Com certeza, é uma linguagem em que estou sempre me aperfeiçoando, pois, 
+          para quase todo problema, normalmente existe uma solução em Python.
         </p>
+      </div>
 
-        <h2>Tecnologias:</h2>
-        <!-- Gostaria de um carrosel com foto das tecnologias que eu sei aqui -->
+      <!-- Card C -->
+      <div class="tech-card">
+        <img src="img/icons8-programação-c-144.png" alt="Logo C" class="tech-icon" />
+        <h3>C</h3>
+        <p>
+          C foi, sem dúvida, a linguagem que mais utilizei durante minha trajetória de 
+          desenvolvimento de software, pois era amplamente empregada no estudo de 
+          estruturas de dados (como árvores, arrays, listas encadeadas, entre outras). 
+          Embora atualmente eu não a utilize para resolver problemas do dia a dia, considero-a 
+          essencial para o aprendizado de lógica de 
+          programação e para entender como tudo funciona “por baixo dos panos”.
+        </p>
+      </div>
 
-        <div class="imagens-tecnologias">
+      <!-- Card JavaScript -->
+      <div class="tech-card">
+        <img src="img/icons8-javascript-144.png" alt="Logo JavaScript" class="tech-icon" />
+        <h3>JavaScript</h3>
+        <p>
+          Esta é a linguagem com a qual tive menos contato, pois esta landing page é meu 
+          primeiro projeto em JavaScript. No entanto, está sendo uma ferramenta poderosa e 
+          essencial para dar vida a tudo o que minha criatividade propõe.
+        </p>
+      </div>
 
-            <div class="tech-container" id="python-container">
-                <img id="imgPython" src="img/icons8-python-144.png" alt="Imagem Clicável" style="cursor: pointer;" width="144" height="144">
-                <p id="py-txt" style="display: none;">
-                  Este texto aparece quando a imagem de Python é clicada!
-                </p>
-              </div>
-              
-            </div>
+      <!-- Card HTML -->
+      <div class="tech-card">
+        <img src="img/icons8-html-144.png" alt="Logo HTML" class="tech-icon" />
+        <h3>HTML</h3>
+        <p>
+          Apesar de normalmente estar mais focado no backend, sempre que falamos
+          de frontend o HTML está presente no assunto, para dar corpo.
+        </p>
+      </div>
 
-            <div class="c-img">
-                <img id="imgC" src="img/icons8-programação-c-144.png" alt="Imagem Clicável" style="cursor: pointer;"
-                    width="144" height="144">
-                <p id="c-txt" style="display: none;">
-                    Este texto aparece quando a imagem é clicada!
-                </p>
-            </div>
+      <!-- Card CSS -->
+      <div class="tech-card">
+        <img src="img/icons8-css-200.png" alt="Logo CSS" class="tech-icon" />
+        <h3>CSS</h3>
+        <p>
+          É fundamental para estilizar páginas e garantir uma boa experiência visual.
+          Com o CSS, conseguimos criar layouts responsivos e agradáveis, dando vida ao HTML.
+        </p>
+      </div>
 
-            <div class="js-img">
-                <img id="imgJS" src="img/icons8-javascript-144.png" alt="Imagem Clicável" style="cursor: pointer;"
-                    width="144" height="144">
-                <p id="js-txt" style="display: none;">
-                    Este texto aparece quando a imagem é clicada!
-                </p>
-            </div>
+    </div>
+  </main>
 
-            <div class="html-img">
-                <img id="imgHTML" src="img/icons8-html-144.png" alt="Imagem Clicável" style="cursor: pointer;"
-                    width="144" height="144">
-                <p id="html-txt" style="display: none;">
-                    Este texto aparece quando a imagem é clicada!
-                </p>
-            </div>
-
-            <div class="css-img">
-                <img id="imgCSS" src="img/icons8-css-200.png" alt="Imagem Clicável" style="cursor: pointer;" width="144"
-                    height="144">
-                <p id="CSS-txt" style="display: none;">
-                    Este texto aparece quando a imagem é clicada!
-                </p>
-            </div>
-
-        </div>
-
-    </main>
-
-    <script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
-
 </html>
