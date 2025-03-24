@@ -1,8 +1,13 @@
-header {
-  position: relative;  /* Necessário para usar position: absolute nos filhos */
-  text-align: center;
-  background-color: #5d6568;
-  padding: 10px 0;
+/* azul - #96C2DB, cinza - #E5EDF1, branco - #FFFFF */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400&display=swap');
+
+body {
+  background-image: url('/img/background.jpg'); /* Caminho até a imagem */
+  background-size: cover;         /* Faz a imagem cobrir toda a tela */
+  background-position: center;    /* Centraliza a imagem */
+  background-repeat: no-repeat;   /* Evita repetição */
+  background-attachment: fixed;   /* Mantém o fundo fixo ao rolar */
 }
 
 /* Seletor fica no canto superior direito */
@@ -13,19 +18,95 @@ header {
   /* Você pode ajustar esses valores conforme quiser */
 }
 
-.header-photo {
+header {
+  position: relative;  /* Necessário para usar position: absolute nos filhos */
+  text-align: center;
+  padding: 50px 0;
+}
+
+#header-photo {
   width: 200px;
   height: auto;
   border-radius: 50%;
   margin-bottom: 5px;
 }
 
-header h1 {
-  font-weight: 300;
-  margin: 0;
-  color: #fff;
+#titulo_principal {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin: 10px 0 0 0;
 }
 
+#subtitulo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #d4f8e8;
+  font-weight: 300;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-mim {
+  width: 50%;
+  background-color: rgba(240, 248, 255, 0.8); /* Azul Gelo translúcido */
+  border: 2px solid rgba(150, 180, 220, 0.3);  /* Azul claro com leve transparência */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 5%;
+}
+
+#tit-sobre-mim {
+  color: #1f2e4d;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#desc-sobre-mim {
+  color: #222831;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.exp-prof{
+  width: 50%; /* Largura ajustada */
+  background-color: rgba(240, 248, 255, 0.8); /* Azul Gelo translúcido */
+  border: 2px solid rgba(150, 180, 220, 0.3);  /* Azul claro com leve transparência */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: auto; /* Empurra a caixa para a direita */
+  margin-top: 20px; /* Espaçamento entre as seções */
+  margin-right: 5%;
+}
+
+#tit-exp-prof {
+  color: #1f2e4d;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#tit-estagio{
+  color: #1f2e4d;
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+#desc-exp-prof {
+  color: #222831;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-size: 20px;
+  }
 
 /* Contêiner que agrupa todos os cartões de tecnologia */
 .tech-cards-container {
@@ -38,8 +119,8 @@ header h1 {
 
 /* Cada cartão individual */
 .tech-card {
-  background-color: #f9f9f9;
-  border: 2px solid #ccc;
+  background-color: #FFF;
+  border: 2px solid #80c4ff;
   border-radius: 8px;
   width: 300px;          /* Largura fixa ou ajuste conforme precisar */
   padding: 20px;

@@ -14,26 +14,33 @@
         <option value="ENG">ENG</option>
     </select>
 
-    <img src="img/Fotinha_bone.png" alt="Minha foto" class="header-photo">
+    <img src="img/Fotinha_bone.png" alt="Minha foto" id="header-photo">
    
-    <h1>Cauan Magalhães Baptista</h1>
+    <h1 class="titulo" id="titulo_principal">Cauan Magalhães Baptista</h1>
+    <h2 class="titulo" id="subtitulo">Desenvolvedor FullStack</h2>
   </header>
 
   <main>
-    <h2>Sobre mim:</h2>
-    <p>Olá, sou Cauan Magalhães Baptista, apaixonado por tecnologia e desenvolvimento.
+    <div class="sobre-mim">
+    <h2 id="tit-sobre-mim">Sobre mim:</h2>
+    
+    <p id = "desc-sobre-mim">Olá, sou Cauan Magalhães Baptista, apaixonado por tecnologia e desenvolvimento.
       Atualmente, estou matriculado no Ibmec, onde curso Engenharia de Software.
       Anteriormente, cursei 6 períodos de Ciência da Computação na PUC-Rio,
-      mas optei por trancar a matrícula para direcionar meu foco para novos desafios.</p>
-
-    <p>Minha trajetória é movida pela curiosidade e pelo desejo constante de aprender,
+      mas optei por trancar a matrícula para direcionar meu foco para novos desafios.
+      <br></br>
+    Minha trajetória é movida pela curiosidade e pelo desejo constante de aprender,
       seja explorando linguagens como C, Python e SQL ou me aventurando no universo web com HTML e CSS.
-      Convido você a conhecer meu trabalho e a acompanhar essa jornada repleta de inovação e crescimento.</p>
+      Convido você a conhecer meu trabalho e a acompanhar essa jornada repleta de inovação e crescimento.
+    </p>
+  </div>
 
-    <h2>Experiência Profissional:</h2>
-    <h3>Estagiário de TI na Domino's Brasil (Agosto/24 - atual)</h3>
-
-    <p>Atualmente, sou estagiário de TI na Domino's Pizza Brasil,
+    <div class="exp-prof">
+    <h2 id="tit-exp-prof">Experiência Profissional:</h2>
+    <ul>
+    <li><h3 id="tit-estagio">Estagiário de TI na Domino's Brasil (Agosto/24 - atual)</h3></li>
+  </ul>
+    <p id="desc-exp-prof">Atualmente, sou estagiário de TI na Domino's Pizza Brasil,
       onde contribuo ativamente para a gestão e otimização dos sistemas
       internos da empresa. Entre minhas principais responsabilidades, destaco o
       suporte e manutenção do Pulse, um sistema desenvolvido exclusivamente para a
@@ -41,14 +48,12 @@
       sou responsável pela criação e manutenção de dashboards interativos no Power BI e
       utilizo o Excel diariamente para diversas tarefas de análise e controle, o que
       auxilia na tomada de decisões estratégicas.
-    </p>
-
-    <p>
+      <br></br>
       Essa experiência tem aprimorado minhas habilidades de comunicação,
       pesquisa e resolução de problemas, preparando-me para enfrentar desafios complexos e
       impulsionar a eficiência operacional da organização.
     </p>
-
+  </div>
     <h2>Tecnologias:</h2>
 
     <!-- Contêiner que agrupa todos os “cards” de tecnologia -->
@@ -116,6 +121,6 @@
     </div>
   </main>
 
-  <script src="js/script.js"></script>
+  
 </body>
 </html>
