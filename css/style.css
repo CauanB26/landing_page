@@ -1,22 +1,78 @@
 /* azul - #96C2DB, cinza - #E5EDF1, branco - #FFFFF */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+
+html {
+  scroll-behavior: smooth;
+}
+main {
+  padding-top: 80px; /* Altura da .top-bar + um pouquinho extra */
+}
 body {
-  background-image: url('/img/background.jpg'); /* Caminho até a imagem */
-  background-size: cover;         /* Faz a imagem cobrir toda a tela */
-  background-position: center;    /* Centraliza a imagem */
-  background-repeat: no-repeat;   /* Evita repetição */
-  background-attachment: fixed;   /* Mantém o fundo fixo ao rolar */
+  background-image: url('/img/background.jpg');
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;   
+  background-attachment: fixed;   
+  margin: 0;
+  padding: 0;
+}
+/* Remove margens/paddings iniciais do body se quiser ocupar topo */
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-/* Seletor fica no canto superior direito */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o menu */
+  
+  background-color: rgba(240, 248, 255, 1.0);
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+/* Tira a cor e largura duplicadas da navbar */
+.navbar {
+  background: none; /* herda a cor de .top-bar */
+  padding: 0;
+  margin: 0;
+
+}
+
+/* Lista do menu */
+.nav-list {
+  font-family: 'Montserrat', sans-serif; 
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav-list a {
+  color: #1f2e4d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 #select_buttom {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  /* Você pode ajustar esses valores conforme quiser */
+  right: 30px;      /* Distância da borda direita */
+  top: 10px;        /* Alinhado com padding da .top-bar */
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
+
 
 header {
   position: relative;  /* Necessário para usar position: absolute nos filhos */
@@ -25,6 +81,7 @@ header {
 }
 
 #header-photo {
+  padding: 20px;
   width: 200px;
   height: auto;
   border-radius: 50%;
